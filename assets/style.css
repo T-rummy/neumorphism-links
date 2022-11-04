@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.background{
+    background: cover;
+                    background-color: #e0e0e0;
+                    
+
+}
+section {
+    margin-top: 25vh;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.container {
+    max-width: 100vw;
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        height: 50vh;
+        margin: auto;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+        
+}
+.card {
+   
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+        max-width: 100vw;
+           
+            display: flex;
+            align-items: center;
+            width: 75vh;
+            margin: auto;
+        
+            flex-direction: column;
+            justify-content: space-evenly;
+}
+
+
+
+
+
+h1 {
+     color: #090909;
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #e0e0e0;
+        border: 1px solid #e0e0e0;
+        transition: all .3s;
+        box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+            
+}
+.input {
+    background-color: #e0e0e0;
+    border: 1ex solid none;
+    border-top-width: 1.7em;
+    margin: 0;
+    padding: 0;
+    color: black;
+    word-wrap: break-word;
+    outline: 7px solid #383838;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    transition: all 1s;
+    max-width: 190px;
+    
+ 
+}
+
+.input:hover {
+    border-top-width: 0.2em;
+    background-color: #e0e0e0;
+}
+
+.input:focus {
+    border-top-width: 0.2em;
+    background-color: #e0e0e0;
+}
+
+
+
+
+button {
+    position: relative;
+
+        color: #090909;
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #e0e0e0;
+        border: 1px solid #e0e0e0;
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #c5c5c5,
+            -6px -6px 12px #ffffff;
+   
+
+  
+    
+}
+
+  button:hover {
+      color: #666;
+      box-shadow: inset 4px 4px 12px #c5c5c5,
+          inset -4px -4px 12px #ffffff;
+  }
+
+  .card {
+     
+      background-color: #eee;
+      text-align: center;
+      border: 10px solid #eee;
+      border-radius: 20px;
+      box-shadow: inset 5px 5px 10px #bbb, inset -5px -5px 10px #fff;
+      
+  }
+
+  /*Rainbow card*/
+  .card {
+    --background: #f5f5f5;
+        --green: #1FC11B;
+        --yellow: #FFD913;
+        --orange: #FF9C55;
+        --red: #FF5555;
+        --violet: #555BFF;
+      /* width: 190px;
+      height: 254px;
+      display: flex;
+      flex-direction: column; */
+      gap: 1em;
+      
+      padding: 1rem;
+      
+      box-shadow: inset 5px 5px 10px #bbb, inset -5px -5px 10px #fff,
+        10px -10px 0 -3px var(--background), 10px -10px var(--green),
+          20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+          30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+          40px -40px 0 -3px var(--background), 40px -40px var(--red);
+        
+      transition: box-shadow 1s, top 1s, left 1s;
+  }
+
+
+  /*Hover*/
+  .card:hover {
+      box-shadow: inset 5px 5px 10px #bbb, inset -5px -5px 10px #fff, 
+          0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+          0 0 0 -3px var(--background), 0 0 0 0 var(--yellow),
+          0 0 0 -3px var(--background), 0 0 0 0 var(--orange),
+          0 0 0 -3px var(--background), 0 0 0 0 var(--red);
+  }
+
+  .submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      cursor: pointer;
+      width: 150px;
+      height: 50px;
+      background-image: linear-gradient(to top, #D8D9DB 0%, #fff 100%);
+      border-radius: 30px;
+    border: 1px solid #e0e0e0;
+      transition: all 0.2s ease;
+      font-size: 14px;
+      
+      
+      
+      
+  }
+
+  .submit:hover {
+      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+  }
+
+  .submit:active {
+      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+
+  .submit:focus {
+      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+
+  
+
+
+
+
+
