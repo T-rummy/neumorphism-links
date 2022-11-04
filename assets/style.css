@@ -71,7 +71,7 @@ h1 {
             
 }
 .input {
-    background-color: #e0e0e0;
+    background-color: #383838;
     border: 1ex solid none;
     border-top-width: 1.7em;
     margin: 0;
@@ -84,18 +84,18 @@ h1 {
     text-align: center;
     transition: all 1s;
     max-width: 190px;
-    
- 
+    font-weight: bold;
+  
 }
 
 .input:hover {
     border-top-width: 0.2em;
-    background-color: #e0e0e0;
+    background-color: #f1e8e8;
 }
 
 .input:focus {
     border-top-width: 0.2em;
-    background-color: #e0e0e0;
+    background-color: #f1e8e8;
 }
 
 
